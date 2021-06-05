@@ -27,12 +27,12 @@ Partial Class ChangePin
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Pin1Tb = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Pin2Tb = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,16 +80,16 @@ Partial Class ChangePin
         Me.Button1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Button1.Size = New System.Drawing.Size(144, 38)
         Me.Button1.TabIndex = 32
-        Me.Button1.Text = "DEPOSIT"
+        Me.Button1.Text = "CHANGE"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'Pin1Tb
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(215, 127)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(183, 27)
-        Me.TextBox1.TabIndex = 31
+        Me.Pin1Tb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Pin1Tb.Location = New System.Drawing.Point(215, 127)
+        Me.Pin1Tb.Name = "Pin1Tb"
+        Me.Pin1Tb.Size = New System.Drawing.Size(183, 27)
+        Me.Pin1Tb.TabIndex = 31
         '
         'Label6
         '
@@ -132,13 +132,13 @@ Partial Class ChangePin
         Me.Label3.Text = "NEW PIN"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TextBox2
+        'Pin2Tb
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(215, 173)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(183, 27)
-        Me.TextBox2.TabIndex = 34
+        Me.Pin2Tb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Pin2Tb.Location = New System.Drawing.Point(215, 173)
+        Me.Pin2Tb.Name = "Pin2Tb"
+        Me.Pin2Tb.Size = New System.Drawing.Size(183, 27)
+        Me.Pin2Tb.TabIndex = 34
         '
         'Label2
         '
@@ -156,18 +156,18 @@ Partial Class ChangePin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(514, 345)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Pin2Tb)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Pin1Tb)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "ChangePin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ChangePin"
@@ -183,11 +183,11 @@ Partial Class ChangePin
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Pin1Tb As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Pin2Tb As TextBox
     Friend WithEvents Label2 As Label
 End Class

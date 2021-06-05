@@ -27,12 +27,12 @@ Partial Class Ministatement
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TransactionDGV = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TransactionDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -49,9 +49,9 @@ Partial Class Ministatement
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(629, 0)
+        Me.PictureBox2.Location = New System.Drawing.Point(640, 0)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(37, 35)
+        Me.PictureBox2.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 9
         Me.PictureBox2.TabStop = False
@@ -78,14 +78,14 @@ Partial Class Ministatement
         Me.Label2.Text = "MINI STATEMENT"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DataGridView1
+        'TransactionDGV
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 123)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(666, 359)
-        Me.DataGridView1.TabIndex = 16
+        Me.TransactionDGV.BackgroundColor = System.Drawing.Color.White
+        Me.TransactionDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.TransactionDGV.Location = New System.Drawing.Point(0, 123)
+        Me.TransactionDGV.Name = "TransactionDGV"
+        Me.TransactionDGV.Size = New System.Drawing.Size(666, 359)
+        Me.TransactionDGV.TabIndex = 16
         '
         'Panel2
         '
@@ -114,7 +114,7 @@ Partial Class Ministatement
         Me.ClientSize = New System.Drawing.Size(666, 531)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.TransactionDGV)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -124,7 +124,7 @@ Partial Class Ministatement
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TransactionDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -134,7 +134,7 @@ Partial Class Ministatement
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents TransactionDGV As DataGridView
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label6 As Label
 End Class

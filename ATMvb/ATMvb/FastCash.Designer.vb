@@ -35,7 +35,7 @@ Partial Class FastCash
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.BalLbl = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -157,9 +157,9 @@ Partial Class FastCash
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(264, 482)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(90, 22)
+        Me.Label4.Size = New System.Drawing.Size(56, 22)
         Me.Label4.TabIndex = 22
-        Me.Label4.Text = "LOGOUT"
+        Me.Label4.Text = "Back"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label2
@@ -182,16 +182,16 @@ Partial Class FastCash
         Me.Panel2.Size = New System.Drawing.Size(666, 13)
         Me.Panel2.TabIndex = 29
         '
-        'Label5
+        'BalLbl
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(351, 140)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(86, 22)
-        Me.Label5.TabIndex = 31
-        Me.Label5.Text = "Balance"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BalLbl.AutoSize = True
+        Me.BalLbl.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BalLbl.Location = New System.Drawing.Point(351, 140)
+        Me.BalLbl.Name = "BalLbl"
+        Me.BalLbl.Size = New System.Drawing.Size(86, 22)
+        Me.BalLbl.TabIndex = 31
+        Me.BalLbl.Text = "Balance"
+        Me.BalLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label3
         '
@@ -209,7 +209,7 @@ Partial Class FastCash
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(666, 531)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.BalLbl)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Button5)
@@ -245,6 +245,6 @@ Partial Class FastCash
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label5 As Label
+    Friend WithEvents BalLbl As Label
     Friend WithEvents Label3 As Label
 End Class

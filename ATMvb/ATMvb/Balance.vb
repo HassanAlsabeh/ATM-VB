@@ -15,6 +15,7 @@ Public Class Balance
     Public Property Acc As String
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
         Dim Obj = New MainForm
+        Obj.Acc = AccNumLbl.Text
         Obj.Show()
         Me.Hide()
     End Sub

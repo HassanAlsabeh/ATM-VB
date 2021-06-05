@@ -32,4 +32,32 @@
         Obj.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim Obj = New Withdraw()
+        Obj.Acc = AccNumLbl.Text
+        Obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim Obj = New ChangePin()
+        Obj.Acc = AccNumLbl.Text
+        Obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim Obj = New FastCash()
+        Obj.Acc = AccNumLbl.Text
+        Obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim Obj = New Ministatement()
+        Obj.Acc = AccNumLbl.Text
+        Obj.Show()
+        Me.Hide()
+    End Sub
 End Class

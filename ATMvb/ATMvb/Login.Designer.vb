@@ -125,6 +125,7 @@ Partial Class Login
         '
         Me.PinTb.Location = New System.Drawing.Point(223, 197)
         Me.PinTb.Name = "PinTb"
+        Me.PinTb.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PinTb.Size = New System.Drawing.Size(183, 27)
         Me.PinTb.TabIndex = 6
         '

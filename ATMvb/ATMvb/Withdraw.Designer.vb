@@ -27,14 +27,14 @@ Partial Class Withdraw
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.AmountTb = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.BalLbl = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -53,9 +53,9 @@ Partial Class Withdraw
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(475, 0)
+        Me.PictureBox2.Location = New System.Drawing.Point(489, 0)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(37, 35)
+        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 9
         Me.PictureBox2.TabStop = False
@@ -84,13 +84,13 @@ Partial Class Withdraw
         Me.Button1.Text = "WITHDRAW"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'AmountTb
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(182, 221)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(183, 27)
-        Me.TextBox1.TabIndex = 31
+        Me.AmountTb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AmountTb.Location = New System.Drawing.Point(182, 221)
+        Me.AmountTb.Name = "AmountTb"
+        Me.AmountTb.Size = New System.Drawing.Size(183, 27)
+        Me.AmountTb.TabIndex = 31
         '
         'Label7
         '
@@ -155,27 +155,27 @@ Partial Class Withdraw
         Me.Label2.Text = "Balance USD:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label5
+        'BalLbl
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(222, 160)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 22)
-        Me.Label5.TabIndex = 34
-        Me.Label5.Text = "Amount"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BalLbl.AutoSize = True
+        Me.BalLbl.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BalLbl.Location = New System.Drawing.Point(222, 160)
+        Me.BalLbl.Name = "BalLbl"
+        Me.BalLbl.Size = New System.Drawing.Size(85, 22)
+        Me.BalLbl.TabIndex = 34
+        Me.BalLbl.Text = "Amount"
+        Me.BalLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Withdraw
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(514, 345)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.BalLbl)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.AmountTb)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Panel2)
@@ -197,12 +197,12 @@ Partial Class Withdraw
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents AmountTb As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents BalLbl As Label
 End Class
